@@ -85,9 +85,7 @@ The processed image has been written to ../res/disparity.png
 
 Intel DevCloud环境下提交任务的完整代码放在了项目的dev文件夹下，执行的结果截图如下：
 
-```
 ![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/images/image-20210130094805873.png)
-```
 
-本项目参考了https://github.com/dhernandez0/sgm中的CUDA代码。
+本项目参考了https://github.com/dhernandez0/sgm 中的CUDA代码。
 
