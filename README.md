@@ -4,7 +4,7 @@ The cost function of stereo matching is the simple sum of absolute value (SAD) o
 
 **This project has been tested on Windows and Intel's DevCloud.**
 
-##### 1. Windows environment：
+### 1. Windows environment：
 
 Windows 10 Professional Edition, 64-bit, Intel Core i7-7700 CPU, HD Graphics 630; it can run successfully in Visual Studio 2017 Release x64 mode, but there will be problems in Debug mode. After running successfully, it will display as follows:
 
@@ -59,17 +59,17 @@ The saved disparity map is as follows:
 
 ![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/images/disparity.png)
 
-##### 2. Linux system：
+### 2. Linux system：
 
-###### (1) Set environment variables
+#### (1) Set environment variables
 
 `source /opt/intel/oneapi/setvars.sh`
 
-###### (2) Copy the code repository
+#### (2) Copy the code repository
 
 `git clone https://github.com/silverfly1992/stereo-matching-dpc.git`
 
-###### (3) Compile and run
+#### (3) Compile and run
 
 `rm -rf stereo-matching-dpc/build`
 
