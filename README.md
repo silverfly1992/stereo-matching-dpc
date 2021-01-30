@@ -53,6 +53,9 @@ All results Matched!
 Stereo matching successfully completed on the device.
 The processed image has been written to ../res/disparity.png
 ```
+保存的视差图结果如下所示：
+
+![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/res/disparity.png)
 
 2.Linux系统下可按如下步骤执行：
 
