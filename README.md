@@ -1,8 +1,8 @@
 This project is an example of stereo matching algorithm written based on OneAPI dpc++, including two kernel types, Basic and ND-Range for GPU.
 
-The cost function of stereo matching is the simple sum of absolute value (SAD) of the local window . In order to speed up the calculation, the original C++ code has converted the two-dimensional cost calculation into: first calculate the one-dimensional cost in the vertical direction, and then aggregate in the horizontal direction. The disparity position is calculated using the Winner Takes All (WTA) algorithm.
+The cost function of stereo matching is the simple Sum of Absolute Difference (SAD) of the local window . In order to speed up the calculation, the original C++ code has converted the two-dimensional cost calculation into: first calculate the one-dimensional cost in the vertical direction, and then aggregate in the horizontal direction. The disparity position is calculated using the Winner Takes All (WTA) algorithm.
 
-**This project has been tested on Windows and Intel's DevCloud.**
+**This project has been tested on Windows system and Intel's DevCloud environment.**
 
 ### 1. Windows environment：
 
@@ -55,7 +55,7 @@ All results Matched!
 Stereo matching successfully completed on the device.
 The processed image has been written to ../res/disparity.png
 ```
-The saved disparity map is as follows:
+The calculated disparity map is shown as follows:
 
 ![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/images/disparity.png)
 
@@ -85,7 +85,7 @@ The saved disparity map is as follows:
 
 `make run`
 
-The complete code for submitting tasks in the Intel DevCloud environment is placed in the dev folder of the project. The screenshot of the execution result is as follows:
+The complete code for submitting tasks in the Intel DevCloud environment is placed in the "dev" folder of the project. The screenshot of the execution result is as follows:
 
 ![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/images/image-20210130094805873.png)
 
