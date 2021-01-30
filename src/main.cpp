@@ -1,7 +1,7 @@
 //==============================================================
 // Copyright ?2021 silverfly
 //
-// 01.22.2021 Heifei University of Technology
+// 01.22.2021 Hefei University of Technology
 // =============================================================
 #include "headers.h"
 
@@ -251,6 +251,8 @@ int main(int argc, char* argv[]) {
 
 	///********** Evaluate Basic Kernel ***********///
 	uint8_t* outdata2 = (uint8_t*)malloc(image_width * image_height * sizeof(uint8_t));
+	// Warm up for speed evaluation.
+	StereoMatchingBasic(indata, indata2, outdata2, image_width, image_height);
 
 #ifdef PERF_NUM
 	std::cout << "\n\nEvaluating Basic Kernel...\n\n";
