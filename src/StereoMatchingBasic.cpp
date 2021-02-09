@@ -2,7 +2,6 @@
 #include "StereoMatchingBasic.h"
 
 //SYCL_EXTERNAL int SAD(uint8_t* imgL, uint8_t* imgR, int i, int j, int d, int width, int height, int win_width = WIN_WIDTH);
-extern bool warm_up;
 
 void StereoMatchingBasic(uint8_t* imgL, uint8_t* imgR, uint8_t* out, int width, int height) {
 	int image_size = width * height;
@@ -10,10 +9,8 @@ void StereoMatchingBasic(uint8_t* imgL, uint8_t* imgR, uint8_t* out, int width, 
 	int* aggregatedCost = (int*)malloc(image_size * MAX_DIS * sizeof(int));
 
 	sycl::queue q(default_selector{}, exception_handler);
-	if (warm_up) {
-		std::cout << "Running on "
-			<< q.get_device().get_info<sycl::info::device::name>() << "\n";
-	}
+// 	std::cout << "Running on "
+// 		<< q.get_device().get_info<sycl::info::device::name>() << "\n";
 
 	{
 		buffer imgl_buf(imgL, range<1>(image_size));
