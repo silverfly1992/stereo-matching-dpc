@@ -1,4 +1,4 @@
-# Stereo Matching through data parallel c++
+# Stereo matching through data parallel c++
 
 This project is an example of stereo matching algorithm written based on OneAPI dpc++, including two kernel types, Basic and ND-Range for GPU.
 
@@ -85,7 +85,7 @@ cmake ../. &&
 make`
 `make run`
 
-If you want to verify the project on Intel's devcloud, just execute run_scripts.ipynb. The screenshot of the execution result is as follows:
+If you want to verify the project on Intel's DevCloud, just execute run_scripts.ipynb. The screenshot of the execution result is as follows:
 
 ![image](https://github.com/silverfly1992/stereo-matching-dpc/blob/main/images/image-20210130094805873.png)
 
