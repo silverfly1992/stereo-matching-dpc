@@ -93,5 +93,5 @@ If you want to verify the project on Intel's DevCloud, just execute run_scripts.
 
 This application was inspired by the [The Great Cross Architecture Challenge](https://www.codeproject.com/Competitions/1098/The-Great-Cross-Architecture-Challenge).
 
-And this project referred to the CUDA code in https://github.com/dhernandez0/sgm to a certain extent.
+This project referred to the CUDA code in https://github.com/dhernandez0/sgm.
 
